@@ -1,0 +1,4 @@
+rootProject.name='RecyclerViewFactory'
+include ':app'
+include ':recyclerviewFactory'
+include ':pagelayout'
