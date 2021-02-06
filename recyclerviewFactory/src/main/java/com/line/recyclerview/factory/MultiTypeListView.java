@@ -96,6 +96,7 @@ public class MultiTypeListView extends FrameLayout {
             @Override
             public void onRefreshEmpty() {
                 binding.smartRefresh.finishRefresh();
+                binding.smartRefresh.setEnableLoadMore(false);
                 pageLayout.showCustom();
             }
 
@@ -107,6 +108,7 @@ public class MultiTypeListView extends FrameLayout {
             @Override
             public void onRefreshError() {
                 binding.smartRefresh.finishRefresh();
+                binding.smartRefresh.setEnableLoadMore(false);
                 pageLayout.showError();
             }
 
