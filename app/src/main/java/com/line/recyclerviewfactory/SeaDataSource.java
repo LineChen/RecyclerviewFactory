@@ -46,7 +46,8 @@ public class SeaDataSource extends ListViewDataSource {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                callback.onRefreshSuccess(dataList, true);
+//                callback.onRefreshSuccess(dataList, true);
+                callback.onRefreshEmpty();
             }
         }, 500);
     }

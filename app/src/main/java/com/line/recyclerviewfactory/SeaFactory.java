@@ -29,6 +29,7 @@ public class SeaFactory extends BaseListViewFactory {
         errorView.setBackgroundColor(Color.RED);
         TextView emptyView = new TextView(context);
         emptyView.setBackgroundColor(Color.GRAY);
+        emptyView.setText("暂无数据");
         return MultiTypeListView.get(context, multiTypeAdapter, emptyView, errorView, liveDataSource);
     }
 
